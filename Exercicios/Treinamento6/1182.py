@@ -17,9 +17,9 @@ c = int(input())
 t = input()
 m = []
 
-for i in range(3):
+for i in range(12):
     lista = []
-    for j in range(3):
+    for j in range(12):
         n = float(input())
         lista.append(n)
     m.append(lista)

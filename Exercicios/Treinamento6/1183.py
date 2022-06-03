@@ -24,11 +24,16 @@ def media(matriz):
     med = sum / cont_valores
     return med
 
-m = [[1.5, 3.5, 2.0, 7.8, 9.0],
-     [2.5, 3.5, 2.0, 1.8, 6.9],
-     [8.5, 3.5, 2.0, 8.4, 2.8],
-     [8.5, 3.5, 2.0, 8.6, 2.8],
-     [8.5, 3.5, 4.9, 8.4, 2.8],
-     ]
+o = input()
+m = []
 
-print(media(m))
+for i in range(12):
+    lista = []
+    for j in range(12):
+        n = float(input())
+        lista.append(n)
+    m.append(lista)
+if o == 'S' :
+    print(f'{soma(m):.1f}')
+elif o == 'M':
+    print(f'{media(m):.1f}')
